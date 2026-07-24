@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home Charging Cost per 100 km, 2026 | MobilityCharts</title>
-<meta name="description" content="What 100 km of electric driving costs on home tariffs, by market, plus the trend since 2020. Table, method note and no-cost embed. Placeholder build.">
+<meta name="description" content="What 100 km of electric driving costs on home tariffs, by market, plus the trend from 2020 onward. Table, method note and no-cost embed. Placeholder build.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='18' width='5' height='10' fill='%230E7A6B'/%3E%3Crect x='13' y='10' width='5' height='18' fill='%230E7A6B'/%3E%3Crect x='22' y='14' width='5' height='14' fill='%230E7A6B'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
@@ -68,7 +68,7 @@
       <dl>
         <dt>Source</dt><dd>Not assigned. Placeholder build.</dd>
         <dt>Licence</dt><dd>Not checked. Gate G1 pending.</dd>
-        <dt>Assumed usage</dt><dd>Stated per market at intake, since consumption per 100 km differs by vehicle.</dd>
+        <dt>Assumed usage</dt><dd>Stated per market at intake, because consumption per 100 km differs by vehicle.</dd>
         <dt>Currency</dt><dd>Stored in source currency, converted at render time only.</dd>
         <dt>Refresh frequency</dt><dd>Quarterly</dd>
         <dt>Last refreshed</dt><dd>Never</dd>
@@ -119,7 +119,7 @@
   MC.render({
     mount: '#trend', type: 'line', data: d.series, unit: d.unit, decimals: d.decimals,
     source: d.source, sourceDate: d.sourceDate,
-    alt: 'Line chart of charging cost per 100 km since 2020, placeholder figures'
+    alt: 'Line chart of charging cost per 100 km from 2020 onward, placeholder figures'
   });
   MC.table({
     mount: '#table', data: d.rows, decimals: d.decimals,
