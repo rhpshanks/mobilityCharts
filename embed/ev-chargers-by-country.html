@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Public EV charging points by country | MobilityCharts embed</title>
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  body { background: var(--surface); }
+  .embed-wrap { padding: 16px 16px 10px; }
+  .embed-head { font-family: var(--serif); font-size: 17px; font-weight: 700; margin: 0 0 3px; }
+  .embed-sub { font-size: 12.5px; color: var(--muted); margin: 0 0 12px; }
+  .embed-foot {
+    margin-top: 8px; padding-top: 9px; border-top: 1px solid var(--line);
+    font-size: 11.5px; color: var(--muted);
+    display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  }
+  .embed-foot a { color: var(--accent); text-decoration: none; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="embed-wrap">
+  <p class="embed-head">Public EV charging points by country</p>
+  <p class="embed-sub">Installed public points, thousands · placeholder figures</p>
+  <div id="chart"></div>
+  <div class="embed-foot">
+    <span>Source: placeholder, not assigned</span>
+    <span>Chart by <a href="https://mobilitycharts.com/charts/ev-chargers-by-country/" target="_blank" rel="noopener">MobilityCharts</a></span>
+  </div>
+</div>
+
+<script src="../assets/chart.js"></script>
+<script src="../data/ev-chargers-by-country/data.js"></script>
+<script>
+(function () {
+  var d = window.DATASETS['ev-chargers-by-country'];
+  MC.render({
+    mount: '#chart', type: 'bar', data: d.rows, unit: d.unit, suffix: d.suffix,
+    decimals: d.decimals, source: d.source, sourceDate: d.sourceDate,
+    alt: 'Bar chart ranking countries by public EV charging points, placeholder figures'
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+id,slice,source_name,publisher,source_url,licence_type,credit_string,update_frequency,last_refresh,subject_filter_passed,gate_g1,status,notes
+ev-chargers-by-country,charging-networks,,,,,,monthly,,yes,not run,PLACEHOLDER,Layout test only. Needs SOP-01 intake before any live use.
+charging-cost-per-100km,running-cost,,,,,,quarterly,,yes,not run,PLACEHOLDER,Layout test only. Needs SOP-01 intake before any live use.

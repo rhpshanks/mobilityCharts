@@ -1,0 +1,3 @@
+date,url,dataset_id,chart_type,gate_g2_pass,gate_g3_pass,indexed_date,notes
+2026-07-25,/charts/ev-chargers-by-country/,ev-chargers-by-country,bar,no,no,,Template build. Placeholder figures.
+2026-07-25,/charts/charging-cost-per-100km/,charging-cost-per-100km,bar+line,no,no,,Template build. Placeholder figures.

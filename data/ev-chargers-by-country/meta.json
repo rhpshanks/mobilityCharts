@@ -1,0 +1,22 @@
+{
+  "id": "ev-chargers-by-country",
+  "slice": "charging-networks",
+  "status": "PLACEHOLDER",
+  "warning": "Invented figures for layout testing. Not publishable. Run SOP-01 before any live use.",
+  "source_name": null,
+  "publisher": null,
+  "source_url": null,
+  "licence_type": null,
+  "credit_string": null,
+  "subject_filter_passed": true,
+  "refresh_frequency": "monthly",
+  "last_refresh": null,
+  "columns": {
+    "country": "ISO 3166 standard spelling",
+    "charging_points_thousands": "public charging points, thousands, one decimal",
+    "period": "reporting month, YYYY-MM"
+  },
+  "gate_g1": "not run",
+  "gate_g2": "not run",
+  "gate_g3": "not run"
+}

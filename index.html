@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MobilityCharts | Charging, cost and mobility data, plotted</title>
+<meta name="description" content="Clean charts built from public transport datasets. Charging networks, running cost, micromobility. Every chart cites its source and ships with an embed code.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='18' width='5' height='10' fill='%230E7A6B'/%3E%3Crect x='13' y='10' width='5' height='18' fill='%230E7A6B'/%3E%3Crect x='22' y='14' width='5' height='14' fill='%230E7A6B'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="glyph"></span>MobilityCharts</a>
+    <nav class="nav">
+      <a href="index.html" aria-current="page">Charts</a>
+      <a href="charts/ev-chargers-by-country/index.html">Chargers</a>
+      <a href="charts/charging-cost-per-100km/index.html">Cost</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+    <button class="theme-btn" type="button">Dark</button>
+  </div>
+</header>
+
+<div class="notice">
+  <div class="wrap"><strong>Development build.</strong> Every figure on this site stands as a placeholder for layout testing. No dataset has passed licence intake yet.</div>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="kicker">Public data, plotted plainly</p>
+    <h1>Charging, cost and mobility, one chart at a time.</h1>
+    <p>Each page holds a single chart built from a licensed public dataset, a short numeric summary, the raw table, and an embed code. Take any chart, place it on your site, credit the link.</p>
+    <a class="btn" href="charts/ev-chargers-by-country/index.html">Browse charts</a>
+    <a class="btn ghost" href="#newsletter">Weekly digest</a>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Latest charts</h2>
+      <span class="rule"></span>
+      <span class="count">2 live · 0 licensed</span>
+    </div>
+    <div class="grid">
+
+      <a class="card" href="charts/ev-chargers-by-country/index.html">
+        <span class="tag">Charging networks</span>
+        <h3>Public EV charging points by country</h3>
+        <p>Where charging infrastructure sits thickest, ranked by installed public points.</p>
+        <div class="meta">Placeholder data · monthly refresh</div>
+      </a>
+
+      <a class="card" href="charts/charging-cost-per-100km/index.html">
+        <span class="tag">Running cost</span>
+        <h3>Home charging cost per 100 km</h3>
+        <p>What 100 km of driving costs on domestic electricity tariffs, by market.</p>
+        <div class="meta">Placeholder data · quarterly refresh</div>
+      </a>
+
+      <a class="card" href="#" style="opacity:.55">
+        <span class="tag">Micromobility</span>
+        <h3>Shared e-bike fleet size by city</h3>
+        <p>Slot held. Dataset intake pending under SOP-01.</p>
+        <div class="meta">Not started</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>How a chart gets here</h2><span class="rule"></span></div>
+    <div class="grid">
+      <div class="card" style="cursor:default">
+        <span class="tag">Step 01</span>
+        <h3>Licence checked</h3>
+        <p>A dataset enters only when its licence permits republishing with attribution. The exact credit wording gets stored word for word.</p>
+      </div>
+      <div class="card" style="cursor:default">
+        <span class="tag">Step 02</span>
+        <h3>Numbers kept honest</h3>
+        <p>Bars start at zero. Rounding happens at display time only. The raw download stays untouched beside the cleaned table.</p>
+      </div>
+      <div class="card" style="cursor:default">
+        <span class="tag">Step 03</span>
+        <h3>Given away</h3>
+        <p>Embed code needs no signup and costs nothing. The link back is the payment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="newsletter" style="padding-top:0">
+  <div class="wrap">
+    <div class="subscribe">
+      <h3>Five charts, every Thursday</h3>
+      <p>One number and one implication per chart. Nothing else.</p>
+      <form class="sub-row">
+        <input type="email" placeholder="you@example.com" aria-label="Email address">
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p class="sub-note" style="margin:12px 0 0;font-size:13.5px;color:var(--muted)"></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Charts</h4>
+        <ul>
+          <li><a href="charts/ev-chargers-by-country/index.html">Chargers by country</a></li>
+          <li><a href="charts/charging-cost-per-100km/index.html">Cost per 100 km</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Compare</h4>
+        <ul>
+          <li><a href="#">Home chargers</a></li>
+          <li><a href="#">E-bikes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="#">Running cost calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The site</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Sources and licences</a></li>
+          <li><a href="#">Correction policy</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>MobilityCharts</span>
+      <span>Charts released for reuse with attribution</span>
+      <span>Built to MC-SOP-001 v0.1</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

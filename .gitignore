@@ -1,0 +1,8 @@
+# Local server and editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Raw dataset downloads stay local until SOP-01 intake clears the licence.
+# Only clean.csv, data.js and meta.json belong in version control.
+data/**/raw_*.csv
