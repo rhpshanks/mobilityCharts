@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MobilityCharts | Charging, cost and mobility data, plotted</title>
-<meta name="description" content="Clean charts built from public transport datasets. Charging networks, running cost, micromobility. Every chart cites its source and ships with an embed code.">
+<title>MobilityCharts | Electric car adoption, plotted from public data</title>
+<meta name="description" content="Clean charts built from licensed public transport datasets. Electric car sales share and volume by country, with raw tables, method notes and no-cost embed codes.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='18' width='5' height='10' fill='%230E7A6B'/%3E%3Crect x='13' y='10' width='5' height='18' fill='%230E7A6B'/%3E%3Crect x='22' y='14' width='5' height='14' fill='%230E7A6B'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -15,8 +15,8 @@
     <a class="brand" href="index.html"><span class="glyph"></span>MobilityCharts</a>
     <nav class="nav">
       <a href="index.html" aria-current="page">Charts</a>
-      <a href="charts/ev-chargers-by-country/index.html">Chargers</a>
-      <a href="charts/charging-cost-per-100km/index.html">Cost</a>
+      <a href="charts/ev-sales-share-by-country/index.html">Share</a>
+      <a href="charts/electric-car-sales-by-country/index.html">Volume</a>
       <a href="#newsletter">Newsletter</a>
     </nav>
     <button class="theme-btn" type="button">Dark</button>
@@ -24,15 +24,15 @@
 </header>
 
 <div class="notice">
-  <div class="wrap"><strong>Development build.</strong> Every figure on this site stands as a placeholder for layout testing. No dataset has passed licence intake yet.</div>
+  <div class="wrap"><strong>Data year 2025.</strong> Charts built from IEA Global EV Outlook 2026 figures, processed by Our World in Data, released under CC BY 4.0.</div>
 </div>
 
 <div class="hero">
   <div class="wrap">
     <p class="kicker">Public data, plotted plainly</p>
-    <h1>Charging, cost and mobility, one chart at a time.</h1>
+    <h1>A quarter of the world's new cars went electric in 2025.</h1>
     <p>Each page holds one chart built from a licensed public dataset, a short numeric summary, the raw table, and an embed code. Take any chart, place it on your site, credit the link.</p>
-    <a class="btn" href="charts/ev-chargers-by-country/index.html">Browse charts</a>
+    <a class="btn" href="charts/ev-sales-share-by-country/index.html">Browse charts</a>
     <a class="btn ghost" href="#newsletter">Weekly digest</a>
   </div>
 </div>
@@ -42,29 +42,29 @@
     <div class="sec-head">
       <h2>Latest charts</h2>
       <span class="rule"></span>
-      <span class="count">2 live · 0 licensed</span>
+      <span class="count">2 live · 2 licensed</span>
     </div>
     <div class="grid">
 
-      <a class="card" href="charts/ev-chargers-by-country/index.html">
-        <span class="tag">Charging networks</span>
-        <h3>Public EV charging points by country</h3>
-        <p>Where charging infrastructure sits thickest, ranked by installed public points.</p>
-        <div class="meta">Placeholder data · monthly refresh</div>
+      <a class="card" href="charts/ev-sales-share-by-country/index.html">
+        <span class="tag">Adoption</span>
+        <h3>Electric share of new car sales by country</h3>
+        <p>Norway hit 97 percent in 2025, and eight countries now clear half of all new car sales.</p>
+        <div class="meta">2025 data · CC BY 4.0 · annual refresh</div>
       </a>
 
-      <a class="card" href="charts/charging-cost-per-100km/index.html">
-        <span class="tag">Running cost</span>
-        <h3>Home charging cost per 100 km</h3>
-        <p>What 100 km of driving costs on domestic electricity tariffs, by market.</p>
-        <div class="meta">Placeholder data · quarterly refresh</div>
+      <a class="card" href="charts/electric-car-sales-by-country/index.html">
+        <span class="tag">Adoption</span>
+        <h3>New electric cars sold by country</h3>
+        <p>China took 63 percent of the 21.2 million electric cars sold worldwide in 2025.</p>
+        <div class="meta">2025 data · CC BY 4.0 · annual refresh</div>
       </a>
 
       <a class="card" href="#" style="opacity:.55">
-        <span class="tag">Micromobility</span>
-        <h3>Shared e-bike fleet size by city</h3>
-        <p>Slot held. Dataset intake pending under SOP-01.</p>
-        <div class="meta">Not started</div>
+        <span class="tag">Charging networks</span>
+        <h3>Public charging points by country</h3>
+        <p>Slot held. No source with a permissive licence located yet, so intake stays open.</p>
+        <div class="meta">Blocked at SOP-01</div>
       </a>
 
     </div>
@@ -114,8 +114,8 @@
       <div>
         <h4>Charts</h4>
         <ul>
-          <li><a href="charts/ev-chargers-by-country/index.html">Chargers by country</a></li>
-          <li><a href="charts/charging-cost-per-100km/index.html">Cost per 100 km</a></li>
+          <li><a href="charts/ev-sales-share-by-country/index.html">Electric share of new car sales</a></li>
+          <li><a href="charts/electric-car-sales-by-country/index.html">New electric cars sold</a></li>
         </ul>
       </div>
       <div>
@@ -144,7 +144,7 @@
     </div>
     <div class="colophon">
       <span>MobilityCharts</span>
-      <span>Charts released for reuse with attribution</span>
+      <span>Data: IEA Global EV Outlook 2026 via Our World in Data, CC BY 4.0</span>
       <span>Built to MC-SOP-001 v0.1</span>
     </div>
   </div>

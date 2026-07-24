@@ -1,3 +1,4 @@
 id,slice,source_name,publisher,source_url,licence_type,credit_string,update_frequency,last_refresh,subject_filter_passed,gate_g1,status,notes
-ev-chargers-by-country,charging-networks,,,,,,monthly,,yes,not run,PLACEHOLDER,Layout test only. Needs SOP-01 intake before any live use.
-charging-cost-per-100km,running-cost,,,,,,quarterly,,yes,not run,PLACEHOLDER,Layout test only. Needs SOP-01 intake before any live use.
+ev-sales-share-by-country,adoption,Global EV Outlook 2026,IEA processed by Our World in Data,https://ourworldindata.org/grapher/electric-car-sales-share,CC BY 4.0,"IEA (2026), Global EV Outlook 2026, IEA, Paris. Licence: CC BY 4.0. Processed by Our World in Data.",annual,2026-07-25,yes,passed,LIVE,59 countries carry a 2025 value. Top 15 published.
+electric-car-sales-by-country,adoption,Global EV Outlook 2026,IEA processed by Our World in Data,https://ourworldindata.org/grapher/electric-car-sales,CC BY 4.0,"IEA (2026), Global EV Outlook 2026, IEA, Paris. Licence: CC BY 4.0. Processed by Our World in Data.",annual,2026-07-25,yes,passed,LIVE,Source count stored unrounded. Chart reads in thousands.
+public-charging-points-by-country,charging-networks,,,,,,,,yes,blocked,PENDING,No source with a permissive licence located. IEA report figures sit under report terms rather than an open data licence. Intake stays open.

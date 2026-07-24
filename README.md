@@ -3,9 +3,23 @@
 Static site scaffold built to **MC-SOP-001 v0.1**. No build step, no package manager,
 no external requests. Plain HTML, one stylesheet, one chart renderer.
 
-> **Every figure in this repository is a placeholder.** Values were invented to test
-> layout. No dataset has passed the SOP-01 licence gate. Nothing here may go live
-> until real, licensed data replaces it.
+## Data and licence
+
+Both live datasets come from **IEA Global EV Outlook 2026**, processed by
+**Our World in Data**, released under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+> IEA (2026), Global EV Outlook 2026, IEA, Paris. Licence: CC BY 4.0. Processed by Our World in Data.
+
+CC BY 4.0 permits republishing with attribution, so the credit line rides inside
+every chart SVG and repeats in each page method note. Refresh both datasets with:
+
+```bash
+powershell -File tools/build-data.ps1
+```
+
+That script downloads the current CSV, replaces `clean.csv` and `data.js`, and
+leaves `meta.json` and `notes.md` for a human to review.
 
 ## Run it locally
 

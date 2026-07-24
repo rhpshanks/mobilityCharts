@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home charging cost per 100 km | MobilityCharts embed</title>
+<title>New electric car sales by country, 2025 | MobilityCharts embed</title>
 <link rel="stylesheet" href="../assets/site.css">
 <style>
   body { background: var(--surface); }
@@ -20,24 +20,27 @@
 </head>
 <body>
 <div class="embed-wrap">
-  <p class="embed-head">Home charging cost per 100 km</p>
-  <p class="embed-sub">Domestic tariff, USD · placeholder figures</p>
+  <p class="embed-head">New electric cars sold, 2025</p>
+  <p class="embed-sub">Thousands of cars, top 15 countries</p>
   <div id="chart"></div>
   <div class="embed-foot">
-    <span>Source: placeholder, not assigned</span>
-    <span>Chart by <a href="https://mobilitycharts.com/charts/charging-cost-per-100km/" target="_blank" rel="noopener">MobilityCharts</a></span>
+    <span>IEA (2026), Global EV Outlook 2026, CC BY 4.0 · processed by Our World in Data</span>
+    <span>Chart by <a href="https://mobilitycharts.com/charts/electric-car-sales-by-country/" target="_blank" rel="noopener">MobilityCharts</a></span>
   </div>
 </div>
 
 <script src="../assets/chart.js"></script>
-<script src="../data/charging-cost-per-100km/data.js"></script>
+<script src="../data/electric-car-sales-by-country/data.js"></script>
 <script>
 (function () {
-  var d = window.DATASETS['charging-cost-per-100km'];
+  var d = window.DATASETS['electric-car-sales-by-country'];
   MC.render({
-    mount: '#chart', type: 'bar', data: d.rows, unit: d.unit, decimals: d.decimals,
-    source: d.source, sourceDate: d.sourceDate, labelWidth: 120,
-    alt: 'Bar chart of home charging cost per 100 km by market, placeholder figures'
+    mount: '#chart', type: 'bar', data: d.rows,
+    unit: 'Thousands of cars sold, ' + d.latestYear,
+    decimals: 0,
+    source: 'IEA Global EV Outlook 2026 via Our World in Data, CC BY 4.0',
+    sourceDate: d.latestYear,
+    alt: 'Bar chart ranking countries by new electric car sales in 2025'
   });
 })();
 </script>

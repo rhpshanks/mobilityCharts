@@ -1,0 +1,28 @@
+{
+  "id": "ev-sales-share-by-country",
+  "slice": "adoption",
+  "status": "LIVE",
+  "source_name": "Global EV Outlook 2026",
+  "publisher": "International Energy Agency (IEA), processed by Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/electric-car-sales-share",
+  "raw_download_url": "https://ourworldindata.org/grapher/electric-car-sales-share.csv?csvType=full&useColumnShortNames=true",
+  "licence_type": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "credit_string": "IEA (2026), Global EV Outlook 2026, IEA, Paris. Licence: CC BY 4.0. Processed by Our World in Data.",
+  "subject_filter_passed": true,
+  "refresh_frequency": "annual, following each Global EV Outlook release",
+  "source_last_updated": "2026-06-15",
+  "downloaded": "2026-07-25",
+  "latest_year": 2025,
+  "country_rows_available": 59,
+  "rows_published": 15,
+  "columns": {
+    "country": "entity name as published by Our World in Data",
+    "ev_sales_share": "share of new cars sold that are electric, percent, source value unrounded",
+    "year": "reporting year"
+  },
+  "definition": "Electric cars include fully battery-electric and plug-in hybrids.",
+  "gate_g1": "passed 2026-07-25",
+  "gate_g2": "passed 2026-07-25",
+  "gate_g3": "passed 2026-07-25"
+}
