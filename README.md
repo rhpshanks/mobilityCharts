@@ -29,6 +29,30 @@ python -m http.server 5178
 
 Then open `http://localhost:5178/`.
 
+## Vercel Web Analytics
+
+Every page carries this tag before `</body>`:
+
+```html
+<script defer src="/_vercel/insights/script.js"></script>
+```
+
+Vercel serves that path itself at deploy time. On a local server it returns
+404, which is expected and breaks nothing, because the tag is deferred.
+
+**The tag alone does not switch analytics on.** Two steps remain, and both live
+in the Vercel dashboard rather than in this repository:
+
+1. Deploy the project to Vercel.
+2. Open the project, go to the Analytics tab, and enable Web Analytics.
+
+Data starts landing on the next page view after step 2. Until then the script
+404s in production too.
+
+The embed pages carry the tag as well, so views happening inside other people's
+sites get counted. That is the closest direct read on embed reach. Delete the
+tag from `embed/*.html` if that measurement is unwanted.
+
 ## Folder map
 
 ```
