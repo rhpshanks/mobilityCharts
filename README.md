@@ -53,6 +53,33 @@ The embed pages carry the tag as well, so views happening inside other people's
 sites get counted. That is the closest direct read on embed reach. Delete the
 tag from `embed/*.html` if that measurement is unwanted.
 
+## Google AdSense
+
+The loader sits inside `<head>` on the three reader-facing pages:
+
+```html
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8869440014127177"
+     crossorigin="anonymous"></script>
+```
+
+**Not on `embed/*.html`, on purpose.** Those pages get served inside other
+people's articles. Loading ad code there would place ads on a third party site
+without that owner having any say, which risks both the AdSense policy and the
+goodwill the whole embed strategy depends on.
+
+This tag readies the site for review. It shows nothing by itself until either
+Auto ads gets switched on or a unit is placed by hand.
+
+Still pending before ads can run:
+
+- A live privacy page. The footer link points at `#` today, and AdSense expects
+  a real one describing what gets collected.
+- An `ads.txt` at the site root carrying the publisher ID.
+- Enough published pages for review to pass. Two chart pages is thin.
+
+Note that this tag is the first external request the site makes. Everything
+else still runs offline with zero third party calls.
+
 ## Folder map
 
 ```
