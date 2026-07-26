@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "electric-car-sales-by-country",
   "slice": "adoption",
   "status": "LIVE",
@@ -12,6 +12,7 @@
   "subject_filter_passed": true,
   "refresh_frequency": "annual, following each Global EV Outlook release",
   "downloaded": "2026-07-25",
+  "last_checked": "2026-07-26",
   "latest_year": 2025,
   "rows_published": 15,
   "columns": {

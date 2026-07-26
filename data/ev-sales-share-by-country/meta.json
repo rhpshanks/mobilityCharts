@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "ev-sales-share-by-country",
   "slice": "adoption",
   "status": "LIVE",
@@ -13,6 +13,7 @@
   "refresh_frequency": "annual, following each Global EV Outlook release",
   "source_last_updated": "2026-06-15",
   "downloaded": "2026-07-25",
+  "last_checked": "2026-07-26",
   "latest_year": 2025,
   "country_rows_available": 59,
   "rows_published": 15,
